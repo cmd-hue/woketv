@@ -1,3 +1,4 @@
+
     /*
  AngularJS v1.0.9-3ccec13
  (c) 2010-2012 Google, Inc. http://angularjs.org
@@ -32421,9 +32422,10 @@
             a.put(N.D + "/watch.html", '<div id="leanback-player-container"></div><div class="$watch-title-tray" data-model="{{getCurrentVideo()}}"></div><div id="eureka-player-controls-container">  <div id="eureka-player-controls"></div></div><yt:transportcontrols activate-when="watch.isTransportActive()"></yt:transportcontrols><div id="ad-callout" class="$advertisement-callout"></div><div id="branding-container">  <div class="branding-element">    <div id="branding-banner">      <img id="branding-banner-image" />      <div id="branding-banner-overlay">[[Up Next|Message indicating what video is coming next.]]</div>    </div>  </div>  <img id="branding-watermark" class="branding-element" /></div>')
         }
         ]);
+    }
     )();
 
-}
+
 
 /*
      FILE ARCHIVED ON 16:23:35 Dec 31, 2013 AND RETRIEVED FROM THE
