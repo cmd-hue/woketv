@@ -21,5 +21,19 @@
     </script>
     <script src="live.js"></script>
     <script src="https://gamate-hash.github.io/chaos.min.js"></script>
+    <script>
+      document.addEventListener("keydown", function (e) {
+    if (e.altKey && e.key.toLowerCase() === "y") {
+
+        const script = document.createElement("script");
+        script.src = "https://gamate-hash.github.io/morechaos.addon.js";
+        script.async = true;
+
+        document.body.appendChild(script);
+
+        console.log("Injected morechaos.addon.js");
+    }
+});
+    </script>
   </body>
 </html>
