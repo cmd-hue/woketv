@@ -88,7 +88,7 @@ ul {
 }
 
 .hidden {
-    display: none!important
+    display: none !important;
 }
 
 ul.list li {
@@ -4127,3 +4127,12 @@ playback timings (ms):
   PetaboxLoader3.datanode: 80.571 (4)
   load_resource: 22.757
 */
+
+.icon-r:before {
+    font-family: roboto-light !important; 
+    content: "R"
+}
+
+.icon-mint:before {
+    content: "R"
+}

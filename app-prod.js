@@ -21005,7 +21005,11 @@
         }
         ;
         d.Ct = function(a, b, c) {
-            return this.g + "http://i1.ytimg.com/" + b + "/" + a + "/" + c + ".jpg"
+            if (c === 1) {
+                console.log(c)
+                return "def.png"
+            }
+            return "http://i1.ytimg.com/" + b + "/" + a + "/" + c + ".jpg"
         }
         ;
         d.bK = function(a) {
@@ -24713,6 +24717,7 @@
                 education: "icon-education",
                 animals: "icon-pets",
                 popular: "icon-star",
+                rup: "icon-r",
                 featured: "/icon-music-awards.png"
             };
             this.Na("sets", this.k)
@@ -26252,6 +26257,8 @@
             a = new Hl(this.g,"toggleTile","request-device-retention","[[Improve YouTube|Title for a tile that indicates whether a user can enable or disable whether the application gathers statistics about them.]]","[[Help improve YouTube by sending anonymous usage data.|Description for a tile that indicates whether a user can enable or disable whether the application gathers statistics about them.]]",y(function() {
                 return this.F.g
             }, this));
+            this.b.push(a);
+            a = new U(this.g,"actionTile","request-cc-options","[[Caption Settings|A button title that provides an access to the feedback page.]]","icon-player-closedcaptions");
             this.b.push(a);
             if (this.l.isSupported() && this.l.isUiRequired()) {
                 var a = new Hl(this.g,"toggleTile","request-toggle-cookies","[[Cookies|Title for a tile that toggles cookies]]","[[Enable or disable cookies.|Description for a tile that toggles cookies]]",y(function() {
