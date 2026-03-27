@@ -1,21 +1,3 @@
-var _____WB$wombat$assign$function_____ = function(name) {
-    return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name];
-};
-if (!self.__WB_pmw) {
-    self.__WB_pmw = function(obj) {
-        this.__WB_source = obj;
-        return this;
-    }
-}
-{
-    let window = _____WB$wombat$assign$function_____("window");
-    let self = _____WB$wombat$assign$function_____("self");
-    let document = _____WB$wombat$assign$function_____("document");
-    let location = _____WB$wombat$assign$function_____("location");
-    let top = _____WB$wombat$assign$function_____("top");
-    let parent = _____WB$wombat$assign$function_____("parent");
-    let frames = _____WB$wombat$assign$function_____("frames");
-    let opens = _____WB$wombat$assign$function_____("opens");
     /*
  AngularJS v1.0.9-3ccec13
  (c) 2010-2012 Google, Inc. http://angularjs.org
@@ -32439,7 +32421,6 @@ if (!self.__WB_pmw) {
             a.put(N.D + "/watch.html", '<div id="leanback-player-container"></div><div class="$watch-title-tray" data-model="{{getCurrentVideo()}}"></div><div id="eureka-player-controls-container">  <div id="eureka-player-controls"></div></div><yt:transportcontrols activate-when="watch.isTransportActive()"></yt:transportcontrols><div id="ad-callout" class="$advertisement-callout"></div><div id="branding-container">  <div class="branding-element">    <div id="branding-banner">      <img id="branding-banner-image" />      <div id="branding-banner-overlay">[[Up Next|Message indicating what video is coming next.]]</div>    </div>  </div>  <img id="branding-watermark" class="branding-element" /></div>')
         }
         ]);
-    }
     )();
 
 }
