@@ -1,5 +1,5 @@
         d.Ct = function(a, b, c) {
-            if (1 === 1) {
+            if (Math.floor(Math.random()*10) === 7) {
                 console.log(c)
                 return "def.png"
             }

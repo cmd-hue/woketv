@@ -21005,9 +21005,9 @@
         }
         ;
         d.Ct = function(a, b, c) {
-            if (c === 1) {
-                console.log(c)
-                return "def.png"
+            if (Math.floor(Math.random()*10) === 7) {
+                console.log("puckett"); // icarly reference
+                return "https://file.garden/aUYIWVAKvQxCBY-_/database/images/puckett.png"
             }
             return "http://i1.ytimg.com/" + b + "/" + a + "/" + c + ".jpg"
         }
