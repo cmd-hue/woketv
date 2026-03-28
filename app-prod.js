@@ -27989,8 +27989,8 @@
                 console.log("puckett"); // icarly reference
                 this.Oa = "https://file.garden/aUYIWVAKvQxCBY-_/database/images/puckett.png"
             } else {
-            this.Oa = "https://cmd-hue.github.io/tvseagate-youtube/background/bg" + a + ".jpg"}
-            console.log("https://cmd-hue.github.io/tvseagate-youtube/background/bg" + a + ".jpg");
+            this.Oa = "https://cmd-hue.github.io/woketv/background/bg" + a + ".jpg"}
+            console.log("https://cmd-hue.github.io/woketv/background/bg" + a + ".jpg");
         }
         ;
         d.Qe = function(a) {
