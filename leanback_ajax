@@ -127,6 +127,16 @@
             "list_id": "LBpop,0,t,en_US",
             "tab": "featured",
             "thumbnail": "https:\/\/web.archive.org\/web\/20131231162350\/http:\/\/i1.ytimg.com\/vi\/1b1loWJfxaA\/hqdefault.jpg"
+        },
+        {
+            "title": "Jeffy",
+            "video_count": 30,
+            "gdata_list_id": "PL3-4P3gj7QSJlm8jH6X3mqgXhEsQfLAh1",
+            "icon": "cap",
+            "gdata_url": "https:\/\/web.archive.org\/web\/20131231162350\/http:\/\/gdata.youtube.com\/feeds\/api\/standardfeeds\/US\/most_popular?time=today",
+            "list_id": "LBpop,0,t,en_US",
+            "tab": "featured",
+            "thumbnail": "https:\/\/web.archive.org\/web\/20131231162350\/http:\/\/i1.ytimg.com\/vi\/1b1loWJfxaA\/hqdefault.jpg"
         }
     ]
 }

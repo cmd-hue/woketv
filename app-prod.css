@@ -16,6 +16,20 @@
 }
 
 @font-face {
+    font-family: 'modernyticons';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://file.garden/aUYIWVAKvQxCBY-_/database/fonts/YouTubeIconsFilledExperimental-Regular-v112.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: '2015tvicons';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://file.garden/aUYIWVAKvQxCBY-_/database/fonts/2015tvicons.ttf') format('truetype')
+}
+
+@font-face {
     font-family: 'Cutive Mono';
     src: url('./CutiveMono-Regular.woff') format('woff')
 }
@@ -4135,5 +4149,6 @@ playback timings (ms):
 }
 
 .icon-mint:before {
-    content: "R"
+    font-family: modernyticons !important; 
+    content: "\e71a"
 }

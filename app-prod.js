@@ -24717,6 +24717,7 @@
                 animals: "icon-pets",
                 popular: "icon-star",
                 rup: "icon-r",
+                cap: "icon-mint",
                 featured: "/icon-music-awards.png"
             };
             this.Na("sets", this.k)
