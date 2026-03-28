@@ -24718,7 +24718,8 @@
                 popular: "icon-star",
                 rup: "icon-r",
                 cap: "icon-mint",
-                featured: "/icon-music-awards.png"
+                ytlogo: "icon-youtube-alt",
+                featured: "icon-music-awards"
             };
             this.Na("sets", this.k)
         }
@@ -26258,7 +26259,7 @@
                 return this.F.g
             }, this));
             this.b.push(a);
-            a = new U(this.g,"actionTile","request-cc-options","[[Caption Settings|A button title that provides an access to the feedback page.]]","icon-player-closedcaptions");
+            a = new U(this.g,"actionTile","request-cc-options","[[Caption Settings|A button title that provides an access to the feedback page.]]","puckett-icon");
             this.b.push(a);
             if (this.l.isSupported() && this.l.isUiRequired()) {
                 var a = new Hl(this.g,"toggleTile","request-toggle-cookies","[[Cookies|Title for a tile that toggles cookies]]","[[Enable or disable cookies.|Description for a tile that toggles cookies]]",y(function() {

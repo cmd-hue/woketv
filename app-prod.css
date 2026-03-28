@@ -23,6 +23,13 @@
 }
 
 @font-face {
+    font-family: 'fontawesomev4';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://file.garden/aUYIWVAKvQxCBY-_/database/fonts/fontawesomev4.woff2') format('woff2')
+}
+
+@font-face {
     font-family: '2015tvicons';
     font-style: normal;
     font-weight: normal;
@@ -1191,6 +1198,14 @@ body.eureka {
 
 .action-tile .feedback-icon {
     background-image: url(./icon-feedback.png)
+}
+
+.action-tile .puckett-icon {
+    background-image: url(https://file.garden/aUYIWVAKvQxCBY-_/database/images/profilepuckett.png)
+}
+
+.action-tile .quant {
+    background-image: url(https://rhine.webchnl.com/memfs/daad2183-472a-4a6f-ac37-a2934dfccac4.jpg)
 }
 
 .recent-search-tile {
@@ -4151,4 +4166,9 @@ playback timings (ms):
 .icon-mint:before {
     font-family: modernyticons !important; 
     content: "\e71a"
+}
+
+.icon-youtube-alt:before {
+    font-family: fontawesomev4 !important; 
+    content: "\f167"
 }
