@@ -20075,11 +20075,11 @@
                 screen_id: this.b.Ab || "",
                 screen_name: b
             };
-            kk(this.Ne("/api/lounge/pairing/get_pairing_code", {
+            kk(this.Ne("get_pairing_code.txt", {
                 ctx: c
             }), {
                 di: a,
-                method: "POST",
+                method: "GET",
                 format: "RAW",
                 Wc: function(a) {
                     e(a.responseText)
