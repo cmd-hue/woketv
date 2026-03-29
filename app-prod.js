@@ -20058,7 +20058,7 @@
         }
         ;
         d.ew = function(a) {
-            kk(this.Ne("/api/lounge/pairing/generate_screen_id"), {
+            kk(this.Ne("generate_screen_id.txt"), {
                 method: "GET",
                 format: "RAW",
                 Wc: function(b) {
