@@ -26281,7 +26281,7 @@
             b = new U(this.g,"shiyojoTile","request-view-shiyojo"),
             this.b.push(a),
             this.b.push(b));
-            a = new U(this.g,"actionTile","request-view-tos","[[Terms of Service and Privacy|Title of menu item which shows links to terms of service and privacy documents on youtube.com]]","directv");
+            a = new U(this.g,"actionTile","request-view-tos","[[Terms of Service and Privacy|Title of menu item which shows links to terms of service and privacy documents on youtube.com]]","directv","CALL ME WARIO THE WAY I GO WA");
             this.b.push(a)
         }
         ;
