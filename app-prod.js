@@ -20052,13 +20052,20 @@
             return yi(c, b || {})
         }
         ;
+        d.TEXS = function(a, b) {
+            var c = Number(ti(document.location.href)[4] || null) || null || "";
+            c && (c = ":" + c);
+            c = c + a;
+            return yi(c, b || {})
+        }
+        ;
         d.Ln = function() {
             this.b && (this.b.Mb = "");
             dk(y(this.Ln, this), 864E5)
         }
         ;
         d.ew = function(a) {
-            kk(this.Ne("generate_screen_id.txt"), {
+            kk(this.TEXS("generate_screen_id.txt"), {
                 method: "GET",
                 format: "RAW",
                 Wc: function(b) {
@@ -20075,7 +20082,7 @@
                 screen_id: this.b.Ab || "",
                 screen_name: b
             };
-            kk(this.Ne("get_pairing_code.txt", {
+            kk(this.TEXS("get_pairing_code.txt", {
                 ctx: c
             }), {
                 di: a,
