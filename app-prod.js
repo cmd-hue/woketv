@@ -26251,6 +26251,7 @@
             this.h.supportsPairing && this.j.B("pairing:changed", y(this.eu, this))
         }
         d = Xm.prototype;
+        window.crush = this.O.push
         if (window.debugmode === true) {
             this.O.push("Debug Mode Enabled")
         }
