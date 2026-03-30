@@ -40,6 +40,13 @@
 }
 
 @font-face {
+    font-family: 'ds1';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://file.garden/aUYIWVAKvQxCBY-_/database/fonts/DisneyJuniorFutura-Regular.otf')
+}
+
+@font-face {
     font-family: '2015tvicons';
     font-style: normal;
     font-weight: normal;
@@ -4177,6 +4184,11 @@ playback timings (ms):
     content: "R"
 }
 
+.icon-boomerang:before {
+    font-family: "ds1" !important; 
+    content: "B"
+}
+
 .icon-mint:before {
     font-family: modernyticons !important; 
     content: "\e71a"
@@ -4197,5 +4209,15 @@ playback timings (ms):
 }
 
 .action-tile.alternate {
-    font-family: "PeaPie-Regular" !important;
+    font-family: "ds1" !important;
+}
+
+.action-tile.alternate.active {
+    background-color: rgba(0, 128, 0, 0.12);
+    backdrop-filter: blur(50px);
+}
+
+.action-tile.alternate {
+    outline-width: thick;
+    outline-color: #2793e6;
 }
