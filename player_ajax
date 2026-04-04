@@ -1,151 +1,179 @@
-<div id="video-player" class="html5-video-player" style="display: none;">
-<div class="html5-video-container">
-<div class="html5-video-content"></div>
+{
+  "video-player": {
+    "id": "video-player",
+    "class": "html5-video-player",
+    "style": "display: none;",
+    "children": {
+      "container": {
+        "class": "html5-video-container",
+        "content": {},
+        "ads": {
+          "class": "video-ads html5-stop-propagation",
+          "status_bar": {
+            "class": "video-ad-status-bar",
+            "label": "Ad",
+            "time_left": "",
+            "progress": {
+              "class": "html5-progress-bar html5-stop-propagation",
+              "list": {
+                "class": "html5-ad-progress-list html5-progress-list html5-progress-item"
+              }
+            }
+          },
+          "ad_container": {}
+        }
+      },
+      "controls": {
+        "class": "html5-video-controls"
+      }
+    }
+  },
+  "messages": {
+    "AUTOPLAY_MESSAGE": {
+      "other": "Playing next video in # seconds",
+      "case1": "Playing next video in 1 second"
+    },
+    "HTML5_DEFAULT_FALLBACK": "This video is currently unavailable.",
+    "HTML5_NO_AVAILABLE_FORMATS_FALLBACK": "This video format is not supported.",
+    "FLASH_FALLBACK": "This video format is not supported.",
+    "DEVICE_FALLBACK": "Sorry, this video cannot be played on this device.",
+    "LEARN_MORE": "",
+    "YTP_SENTIMENT_LIKE": {
+      "other": "# 人顶过",
+      "case0": "无人顶过",
+      "case1": "1 人顶过"
+    },
+    "YTP_SENTIMENT_DISLIKE": {
+      "other": "# 人踩过",
+      "case0": "无人踩过",
+      "case1": "1 人踩过"
+    },
+    "YTP_AUTHOR_ATTRIBUTION": "Author: $author",
 
-<div class="video-ads html5-stop-propagation">
-<div class="video-ad-status-bar">
-<div class="video-ad-label">Ad</div>
-<div class="video-ad-time-left"></div>
-<div class="html5-progress-bar html5-stop-propagation">
-<div class="html5-ad-progress-list html5-progress-list html5-progress-item"></div>
-</div>
+    "buttons": {
+      "YTP_SHARE_PLAYLIST": "Share this playlist",
+      "YTP_BUTTON_CANCEL": "Cancel",
+      "YTP_BUTTON_PLAY": "Play",
+      "YTP_BUTTON_PAUSE": "Pause",
+      "YTP_BUTTON_REPLAY": "Replay",
+      "YTP_BUTTON_STOP": "Stop Live",
+      "YTP_BUTTON_PLAYLIST": "Playlist",
+      "YTP_BUTTON_NEXT": "Next",
+      "YTP_BUTTON_PREVIOUS": "Previous",
+      "YTP_BUTTON_LOOP": "Loop",
+      "YTP_BUTTON_SHUFFLE": "Random",
+      "YTP_BUTTON_EXPAND": "Expand",
+      "YTP_BUTTON_COLLAPSE": "Collapse",
+      "YTP_BUTTON_LIKE": "Top",
+      "YTP_BUTTON_DISLIKE": "Dislike",
+      "YTP_BUTTON_FULLSCREEN_ENTER": "Full Screen",
+      "YTP_BUTTON_FULLSCREEN_EXIT": "Exit Full Screen",
+      "YTP_BUTTON_SHARE": "Share",
+      "YTP_BUTTON_MORE_SHARE": "More",
+      "YTP_BUTTON_INFO": "Details",
+      "YTP_BUTTON_CLOSE": "Close"
+    },
 
-</div>
-<div class="ad-container"></div>
-</div>
+    "tooltips": {
+      "YTP_TOOLTIP_IDENTITY_WATCH_LATER": "Watch later as __user_name__",
+      "YTP_TOOLTIP_IDENTITY": "As __user_name__",
+      "YTP_TOOLTIP_WATCH_LATER": "Watch later",
+      "YTP_TOOLTIP_SETTINGS": "Settings"
+    },
 
-</div>
-<div class="html5-video-controls"></div>
-<div id="html5-player-messages" class="hid">
-<div id="AUTOPLAY_MESSAGE">{"other": "Playing next video in # seconds", "case1": "Playing next video in 1 second"}</div>
-<div id="HTML5_DEFAULT_FALLBACK">This video is currently unavailable.</div>
-<div id="HTML5_NO_AVAILABLE_FORMATS_FALLBACK">This video format is not supported.</div>
-<div id="FLASH_FALLBACK">This video format is not supported.</div>
-<div id="DEVICE_FALLBACK">Sorry, this video cannot be played on this device. </div> 
-<div id="LEARN_MORE"></div> 
-<div id="YTP_SENTIMENT_LIKE">{"other": "# \u4eba\u9876\u8fc7", "case0": "\u65e0\u4eba\u9876\u8fc7", "case1": "1 \u4eba\u9876\u8fc7"}</div> 
-<div id="YTP_SENTIMENT_DISLIKE">{"other": "# \u4eba\u8e29\u8fc7", "case0": "\u65e0\u4eba\u8e29\u8fc7", "case1": "1 \u4eba\u8e29\u8fc7"}</div> 
-<div id="YTP_AUTHOR_ATTRIBUTION">Author: $author</div> 
-<div <div id="YTP_SHARE_PLAYLIST">Share this playlist</div>
+    "settings": {
+      "HTML5_SPEED_NORMAL": "Normal",
+      "HTML5_QUALITY_SETTING": "Quality",
+      "HTML5_SPEED_SETTING": "Playback speed",
+      "HTML5_VOLUME_SETTING": "Volume",
+      "HTML5_VOLUME_MUTED": "Muted",
+      "HTML5_VOLUME_MUTE": "Mute",
+      "HTML5_VOLUME_UNMUTE": "Unmute",
+      "HTML5_CONTROL_TOGGLE": "Toggle"
+    },
 
-<div id="YTP_BUTTON_CANCEL">Cancel</div>
+    "quality": {
+      "title": "Quality",
+      "levels": {
+        "HIGHRES": "Original resolution HD",
+        "HD1080": "1080p HD",
+        "HD720": "720p HD",
+        "LARGE": "480p",
+        "MEDIUM": "360p",
+        "SMALL": "240p",
+        "TINY": "144p",
+        "AUTO": "Auto",
+        "AUTO_WITH_QUALITY": "Auto ($video_quality)"
+      }
+    },
 
-<div id="YTP_BUTTON_PLAY">Play</div>
+    "player": {
+      "size_title": "Player size",
+      "speed_title": "Speed",
+      "speed_normal": "Normal",
+      "annotations": "Annotations",
+      "off": "Off",
+      "on": "On"
+    },
 
-<div id="YTP_BUTTON_PAUSE">Pause</div>
+    "subtitles": {
+      "TRANSCRIBED": "Transcribed",
+      "ASR": "Automatic captions"
+    },
 
-<div id="YTP_BUTTON_REPLAY">Replay</div>
+    "ads": {
+      "VISIT_ADVERTISERS_SITE": "Visit advertiser's site"
+    },
 
-<div id="YTP_BUTTON_STOP">Stop Live</div>
+    "fresca": {
+      "STARTING_SOON": "Starting soon…",
+      "COMPLETE": "Thanks for watching!",
+      "STAND_BY": "Please stand by."
+    },
 
-<div id="YTP_BUTTON_PLAYLIST">Playlist</div>
+    "rental": {
+      "HEADER": "Ready to start your rental?",
+      "DESCRIPTION": "Once started, you have 24 hours to watch this video.",
+      "BUTTON": "Start rental"
+    },
 
-<div id="YTP_BUTTON_NEXT">Next</div>
+    "errors": {
+      "ERROR_ALREADY_PINNED_ON_A_DEVICE": "You have reached the maximum number of devices allowed...",
+      "ERROR_CANNOT_ACTIVATE_RENTAL": "An error occurred while activating your rental.",
+      "ERROR_CAST_SESSION_DEVICE_MISMATCHED": "The device in the Cast session does not match.",
+      "ERROR_CAST_SESSION_VIDEO_MISMATCHED": "The video in the Cast session does not match.",
+      "ERROR_CAST_TOKEN_EXPIRED": "The Cast session has expired.",
+      "ERROR_CAST_TOKEN_FAILED": "The Cast session is unavailable.",
+      "ERROR_CAST_TOKEN_MALFORMED": "Invalid Cast session.",
+      "ERROR_GEO_FAILURE": "This video cannot be played in your country or region.",
+      "ERROR_INVALID_DRM_MESSAGE": "Invalid DRM system-specific message.",
+      "ERROR_LICENSE": "Unable to obtain a license.",
+      "ERROR_NOT_SIGNED_IN": "Please sign in to continue watching.",
+      "ERROR_PURCHASE_NOT_FOUND": "Purchase agreement not found.",
+      "ERROR_PURCHASE_REFUNDED": "The purchase has been refunded.",
+      "ERROR_RENTAL_EXPIRED": "The rental period has expired.",
+      "ERROR_RETRYABLE_ERROR": "A temporary server error occurred.",
+      "ERROR_SERVER_ERROR": "An internal server error occurred.",
+      "ERROR_STOPPED_BY_ANOTHER_PLAYBACK": "Playback stopped on another device.",
+      "ERROR_STREAMING_DEVICES_QUOTA_PER_24H_EXCEEDED": "Too many devices used.",
+      "ERROR_STREAMING_NOT_ALLOWED": "Playback locked to another device.",
+      "ERROR_STREAMING_UNAVAILABLE": "Downloaded for offline viewing.",
+      "ERROR_TOO_MANY_STREAMS_PER_USER": "Too many videos playing.",
+      "ERROR_TOO_MANY_STREAMS_PER_ENTITLEMENT": "Too many devices playing.",
+      "ERROR_UNSUPPORTED_DEVICE": "Playback not supported.",
+      "ERROR_UNUSUAL_ACTIVITY": "Unusual account activity.",
+      "ERROR_VIDEO_FORBIDDEN": "Access denied.",
+      "ERROR_VIDEO_NOT_FOUND": "Video not found."
+    },
 
-<div id="YTP_BUTTON_PREVIOUS">Previous</div>
-
-<div id="YTP_BUTTON_LOOP">Loop</div>
-
-<div id="YTP_BUTTON_SHUFFLE">Random</div>
-
-<div <div id="YTP_BUTTON_EXPAND">Expand</div>
-
-<div id="YTP_BUTTON_COLLAPSE">Collapse</div>
-
-<div id="YTP_BUTTON_LIKE">Top</div>
-
-<div id="YTP_BUTTON_DISLIKE">Dislike</div>
-
-<div id="YTP_BUTTON_FULLSCREEN_ENTER">Full Screen</div>
-
-<div id="YTP_BUTTON_FULLSCREEN_EXIT">Exit Full Screen</div>
-
-<div <div id="YTP_BUTTON_SHARE">Share</div>
-<div id="YTP_BUTTON_MORE_SHARE">More</div>
-<div id="YTP_BUTTON_INFO">Details</div>
-<div id="YTP_BUTTON_CLOSE">Close</div>
-
-<div id="YTP_TOOLTIP_IDENTITY_WATCH_LATER">Watch later as __user_name__</div>
-<div id="YTP_TOOLTIP_IDENTITY">As __user_name__</div>
-<div id="YTP_TOOLTIP_WATCH_LATER">Watch later</div>
-<div id="YTP_TOOLTIP_SETTINGS">Settings</div>
-
-<div id="HTML5_SPEED_NORMAL">Normal</div>
-<div id="HTML5_QUALITY_SETTING">Quality</div>
-<div id="HTML5_SPEED_SETTING">Playback speed</div>
-<div id="HTML5_VOLUME_SETTING">Volume</div>
-<div id="HTML5_VOLUME_MUTED">Muted</div>
-<div id="HTML5_VOLUME_MUTE">Mute</div>
-<div id="HTML5_VOLUME_UNMUTE">Unmute</div>
-<div id="HTML5_CONTROL_TOGGLE">Toggle</div>
-
-<div id="YTP_QUALITY_TITLE">Quality</div>
-<div id="YTP_QUALITY_HIGHRES">Original resolution <sup>HD</sup></div>
-<div id="YTP_QUALITY_HD1080">1080p <sup>HD</sup></div>
-<div id="YTP_QUALITY_HD720">720p <sup>HD</sup></div>
-<div id="YTP_QUALITY_LARGE">480p</div>
-<div id="YTP_QUALITY_MEDIUM">360p</div>
-<div id="YTP_QUALITY_SMALL">240p</div>
-<div id="YTP_QUALITY_TINY">144p</div>
-<div id="YTP_QUALITY_AUTO">Auto</div>
-<div id="YTP_QUALITY_AUTO_WITH_QUALITY">Auto ($video_quality)</div>
-
-<div id="YTP_PLAYER_SIZE_TITLE">Player size</div>
-
-<div id="YTP_PLAYER_SPEED_TITLE">Speed</div>
-<div id="YTP_PLAYER_SPEED_NORMAL">Normal</div>
-
-<div id="YTP_ANNOTATIONS_TITLE">Annotations</div>
-
-<div id="YTP_OFF">Off</div>
-<div id="YTP_ON">On</div>
-
-<div id="HTML5_SUBS_TRANSCRIBED">Transcribed</div>
-<div id="HTML5_SUBS_ASR">Automatic captions</div>
-<div id="VISIT_ADVERTISERS_SITE">Visit advertiser's site</div>
-
-<div id="FRESCA_STARTING_SOON_MESSAGE">Starting soon…</div>
-<div id="FRESCA_COMPLETE_MESSAGE">Thanks for watching!</div>
-<div id="FRESCA_STAND_BY_MESSAGE">Please stand by.</div>
-
-<div id="YPC_CLICKWRAP_HEADER">Ready to start your rental?</div>
-<div id="YPC_CLICKWRAP_DESCRIPTION">Once started, you have 24 hours to watch this video.</div>
-<div id="YPC_CLICKWRAP_BUTTON">Start rental</div>
-
-<div id="ERROR_ALREADY_PINNED_ON_A_DEVICE">You have reached the maximum number of devices allowed by the copyright holder for downloading this video. To play it on this device, you must first unpin it from another device.</div>
-<div id="ERROR_CANNOT_ACTIVATE_RENTAL">An error occurred while activating your rental. Please refresh or try again later.</div>
-<div id="ERROR_CAST_SESSION_DEVICE_MISMATCHED">The device in the Cast session does not match the requested device.</div>
-<div id="ERROR_CAST_SESSION_VIDEO_MISMATCHED">The video in the Cast session does not match the requested video.</div>
-<div id="ERROR_CAST_TOKEN_EXPIRED">The Cast session has expired. Please refresh.</div>
-<div id="ERROR_CAST_TOKEN_FAILED">The Cast session is unavailable. Please refresh or try again later. </div>
-<div id="ERROR_CAST_TOKEN_MALFORMED">Invalid Cast session. Please refresh or try again later.</div>
-<div id="ERROR_GEO_FAILURE">This video cannot be played in your country or region.</div>
-<div id="ERROR_INVALID_DRM_MESSAGE">Invalid DRM system-specific message.</div>
-<div id="ERROR_LICENSE">Unable to obtain a license for this video. Please try again later.</div>
-<div id="ERROR_NOT_SIGNED_IN">Please sign in to continue watching.</div>
-<div id="ERROR_PURCHASE_NOT_FOUND">Purchase agreement not found.</div>
-<div id="ERROR_PURCHASE_REFUNDED">The purchase for this video has been refunded.</div>
-<div id="ERROR_RENTAL_EXPIRED">The rental period for this video has expired.</div>
-<div id="ERROR_RETRYABLE_ERROR">A temporary server error occurred. Please try again later.</div>
-<div id="ERROR_SERVER_ERROR">An internal server error occurred. Please try again later.</div>
-<div id="ERROR_STOPPED_BY_ANOTHER_PLAYBACK">Playback has stopped because this video has started playing on another device.</div>
-<div id="ERROR_STREAMING_DEVICES_QUOTA_PER_24H_EXCEEDED">Too many devices/IP addresses have been used within the past 24 hours.</div>
-<div id="ERROR_STREAMING_NOT_ALLOWED">Playback is not allowed because this video is currently locked to another device.</div>
-<div id="ERROR_STREAMING_UNAVAILABLE">This video cannot be played at this time because it has been downloaded for offline viewing.</div>
-<div id="ERROR_TOO_MANY_STREAMS_PER_USER">Playback has stopped because too many videos are currently playing under the same account.</div>
-<div id="ERROR_TOO_MANY_STREAMS_PER_ENTITLEMENT">Playback has stopped because this video is already playing on too many devices.</div>
-<div id="ERROR_UNSUPPORTED_DEVICE">Playback is not supported on this device.</div>
-<div id="ERROR_UNUSUAL_ACTIVITY">This video cannot be played at this time due to unusual account activity.</div>
-<div id="ERROR_VIDEO_FORBIDDEN">Your request to access this video has been denied.</div>
-<div id="ERROR_VIDEO_NOT_FOUND">This video could not be found. </div>
-
-<div id="REMOTE_CONNECTED_STATUS">Now playing on __receiver_name__</div>
-<div id="REMOTE_CONNECTING_STATUS">Connecting to __receiver_name__</div>
-<div id="REMOTE_ERROR_STATUS">Error on __receiver_name__</div>
-<div id="REMOTE_LOCAL_SCREEN">This Computer</div>
-<div id="REMOTE_PLAYER_ERROR">This video cannot be played remotely</div>
-<div id="REMOTE_PLAYER_RECONNECT_TIME">Please check your network connection. Retrying in __formatted_time__.</div>
-<div id="REMOTE_PLAYER_RECONNECT_BUTTON">Reconnect</div>
-</div>
-
-</div>
+    "remote": {
+      "CONNECTED": "Now playing on __receiver_name__",
+      "CONNECTING": "Connecting to __receiver_name__",
+      "ERROR": "Error on __receiver_name__",
+      "LOCAL_SCREEN": "This Computer",
+      "PLAYER_ERROR": "Cannot be played remotely",
+      "RECONNECT_TIME": "Retrying in __formatted_time__.",
+      "RECONNECT_BUTTON": "Reconnect"
+    }
+  }
+}
