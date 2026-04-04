@@ -12695,7 +12695,7 @@
         d.DB = function() {
             this.F ? this.Je() : lc("html5-video-player") ? (this.F = !0,
             this.Je()) : (this.j("plht_rq"),
-            this.Kc.get("/leanback_ajax", {
+            this.Kc.get("./player_ajax", {
                 action_player_template: 1,
                 hl: this.gb.Ea,
                 override_hl: 1
