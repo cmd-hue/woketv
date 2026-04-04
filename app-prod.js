@@ -16356,7 +16356,7 @@
         }
         ;
         d.$e = function() {
-            return this.b.useStageGdata ? "http://stage.gdata.youtube.com/feeds/api" : "https://yt2009.truehosting.net/feeds/api"
+            return this.b.useStageGdata ? "http://stage.gdata.youtube.com/feeds/api" : "https://yt-2009-setup--aqis1645654.replit.app/feeds/api"
         }
         ;
         d.ug = function() {
@@ -21957,7 +21957,7 @@
         }
         ;
         d.$e = function() {
-            return this.ia.useStageGdata ? "https://yt2009.truehosting.net/feeds/api" : "https://yt2009.truehosting.net/feeds/api"
+            return this.ia.useStageGdata ? "https://yt-2009-setup--aqis1645654.replit.app/feeds/api" : "https://yt-2009-setup--aqis1645654.replit.app/feeds/api"
         }
         ;
         d.bH = function(a, b, c, e) {
@@ -25782,7 +25782,7 @@
         }
         ;
         Mm.prototype.send = function(a, b, c) {
-            var e = "https://yt2009.truehosting.net/feeds/api" + this.o
+            var e = "https://yt-2009-setup--aqis1645654.replit.app/feeds/api" + this.o
               , f = "";
             if (this.b && a)
                 var g = eg(this.b, a)
